@@ -80,6 +80,9 @@ class ExcelProcessor:
     ) -> None:
         """将DataFrame保存为Excel文件"""
         try:
+            output_dir = os.path.dirname(output_path)
+            if output_dir:
+                os.makedirs(output_dir, exist_ok=True)
             df.to_excel(output_path, sheet_name=sheet_name, index=index)
             print(f"成功保存文件: {output_path}")
         except Exception as e:

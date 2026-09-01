@@ -9,7 +9,7 @@ def example_usage():
     print("示例1: 读取单个文件")
     print("=" * 50)
     try:
-        df = processor.read_single_file("data/example.xlsx")
+        df = processor.read_single_file("data/example1.xlsx")
         print("\n前5行数据:")
         print(df.head())
         print("\n列名:")
@@ -32,7 +32,7 @@ def example_usage():
     print("示例3: 读取所有工作表")
     print("=" * 50)
     try:
-        sheets = processor.read_multiple_sheets("data/example.xlsx")
+        sheets = processor.read_multiple_sheets("data/example1.xlsx")
         print("\n读取的工作表:")
         for sheet_name, df in sheets.items():
             print(f"- {sheet_name}: {df.shape[0]} 行 x {df.shape[1]} 列")
@@ -58,7 +58,7 @@ def example_usage():
     print("示例5: 获取文件信息")
     print("=" * 50)
     try:
-        info = processor.get_file_info("data/example.xlsx")
+        info = processor.get_file_info("data/example1.xlsx")
         print(f"\n文件路径: {info['file_path']}")
         print(f"工作表数量: {info['sheet_count']}")
         print(f"工作表列表: {info['sheet_names']}")

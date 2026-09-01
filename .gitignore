@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# 生成的报告输出
+output/
+
+# 样例数据（由 create_sample.py 生成）
+data/*.xlsx
+
+# Excel 打开文件时的临时锁文件
+~$*.xlsx
