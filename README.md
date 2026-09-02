@@ -1,6 +1,8 @@
 # Python Excel 处理工具
 
-一个简单易用的Python库，用于批量读取和处理Excel表格文件。
+一个简单易用的Python库，用于批量读取和处理Excel表格文件，以及一组行业分析报告生成器。
+
+> 项目结构、报告清单、已知问题详见 [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)
 
 ## 功能特性
 
